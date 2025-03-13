@@ -50,7 +50,7 @@ li{
 .headAnch:hover{
     color: rgb(104, 106, 240);
     transition: 0.25s;
-    transform: scale(1.15);
+    transform: scale(1.20);
     text-decoration: underline;
 }
 
@@ -70,10 +70,37 @@ li{
 }
 
 .pfp{
-    height: 200px;
-    width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 5px solid rgb(139, 141, 227);
+}
+
+.btnHolder{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    background-color: rgb(139, 141, 227);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(248, 250, 252);
+    display: block;
+}
+
+.btn:hover{
+    background-color: #fff;
+    text-decoration: underline;
+    color: rgb(130, 132, 243);
+    transition: 0.25s;
+    transform: scale(1.2);
+    
 }
