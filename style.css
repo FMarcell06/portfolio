@@ -5,7 +5,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(157, 158, 244), rgb(191, 219, 254)); /* from-indigo-500, via-indigo-200, to-indigo-700 */
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -14,6 +13,9 @@ nav{
     top: 0;
     width: 100%;
     background-color: rgb(248, 250, 252);
+    -webkit-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
 }
 
 .log{
@@ -21,7 +23,7 @@ nav{
     display: flex;
 }
 
-ul{
+ol{
     background: rgb(248, 250, 252);
     width: 100vw;
     display: flex;
@@ -32,7 +34,7 @@ ul{
     justify-content: flex-end;
 }
 
-li{
+.headAnchli{
     list-style: none;
     display: flex;
     
@@ -45,6 +47,9 @@ li{
     text-decoration: none;
     color: rgb(130, 132, 243);
     font-weight: bold;
+    list-style: none;
+    display: flex;
+    
 }
 
 .headAnch:hover{
@@ -66,7 +71,8 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgb(115, 117, 245), rgb(191, 219, 254)); /* from-indigo-500, via-indigo-200, to-indigo-700 */
 }
 
 .pfp{
@@ -78,13 +84,14 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 5px solid rgb(139, 141, 227);
+    border: 5px solid rgb(227, 227, 254);
 }
 
 .btnHolder{
     display: flex;
     gap: 10px;
     background-color: green;
+    padding-bottom: 10px;
     width: 100%;
     align-items: end;
     justify-content: center;
@@ -93,7 +100,7 @@ li{
 }
 
 .btn{
-    background-color: rgb(139, 141, 227);
+    background-color: rgb(103, 104, 170);
     padding: 10px;
     border-radius: 15px;
     text-decoration: none;
@@ -102,19 +109,19 @@ li{
     display: block;
     width: 130px;
     text-align: center;
+    border: 3px solid rgb(227, 227, 254);
 }
 
 .btn:hover{
-    background-color: #fff;
+    background-color: rgb(227, 227, 254);
     text-decoration: underline;
     color: rgb(130, 132, 243);
     transition: 0.25s;
     transform: scale(1.2);
-    
+    border: 3px solid rgb(130, 132, 243);
 }
 
 .homeContainer{
-    background-color: red;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -145,7 +152,7 @@ li{
     flex-direction: column;
     justify-content: center;
     background-color: blue;
-    
+    color: rgb(227, 227, 254);
 }
 
 .motto{
@@ -156,5 +163,159 @@ li{
     width: 80%;
     align-self: flex-end;
     border-left:rgb(187, 188, 248) 5px solid;
-    color: rgb(187, 188, 248);
+    color: rgb(227, 227, 254);
+}
+
+#about{  
+    background-image: linear-gradient( rgb(115, 117, 245), rgb(191, 219, 254));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHolder{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;  
+    max-width: 800px;
+    background-color: rgb(248, 250, 252);
+    -webkit-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.aboutTop{
+    text-align: center;
+    max-width: 800px;
+    color: rgb(115, 117, 245);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.aboutContent{
+    text-align: justify;
+    text-indent: 8px;
+    color: rgb(115, 117, 245);
+    padding: 15px;
+    font-size: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#work{
+    background-color: violet;
+    min-height: 100vh;
+}
+
+.workContent{
+    text-align: justify;
+    text-indent: 8px;
+    color: rgb(115, 117, 245);
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.workHolder{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  
+    max-width: 1200px;
+    background-color: rgb(248, 250, 252);
+    -webkit-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 36px -27px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.workTop{
+    text-align: center;
+    color: rgb(115, 117, 245);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.portfolio{
+    display: flex;
+    border: 4px solid rgb(115, 117, 245);
+    border-radius: 10px;
+}
+
+.portfolioImg{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.portfolioKep{
+    height: auto;
+    width: 100%;
+    max-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid rgb(115, 117, 245);
+}
+
+.portfolioContent{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolioTitle{
+    width: 100%;
+    border-bottom: 2px solid rgb(115, 117, 245);
+    padding-right: 15px;
+}
+
+.portfolioTopics{
+    width: 100%;
+}
+
+.portfolioTopics p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.portfolioLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 15px;
+    width: 100%;
+    gap: 7px;
+}
+
+.portfolioLinks a{
+    color:rgb(115, 117, 245) ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.portfolioLinks a{
+    color:rgb(115, 117, 245) ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.portfolioLinks a:hover{
+    color:rgb(86, 89, 246);
+    transition: 0.05s;
+    transform: scale(1.05);
+
+}
+
+@media screen and (max-width:500px) {
+    .portfolio{
+        flex-direction: column;
+    }
 }
