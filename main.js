@@ -6,8 +6,13 @@ function renderPortfolio(data){
     console.log(data);
     users = data
 
-
+    let topics = []
     data.forEach(obj=>{
+        obj.topics.forEach(topic=>{
+            if(!topics.includes(topic)){
+                topics.push(`<li> ${topic}</li>`)
+            }
+        })
         console.log(obj);
         document.querySelector('.workHolder').innerHTML+=`
                 <div class="workContent">
@@ -22,7 +27,8 @@ function renderPortfolio(data){
                             <div class="portfolioTopics">
                                 <p>Témakörök:</p>
                                 <ul>
-
+                                    ${topics.join('')}
+                                    ${topics = []}
                                 </ul>
                             </div>
                             <div class="portfolioLinks">
