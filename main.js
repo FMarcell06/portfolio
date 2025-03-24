@@ -5,6 +5,8 @@ getData(url,renderPortfolio)
 function renderPortfolio(data){
     console.log(data);
     users = data
+
+
     data.forEach(obj=>{
         console.log(obj);
         document.querySelector('.workHolder').innerHTML+=`
@@ -20,11 +22,7 @@ function renderPortfolio(data){
                             <div class="portfolioTopics">
                                 <p>Témakörök:</p>
                                 <ul>
-                                    <li>asdasd</li>
-                                    <li>asdasd</li>
-                                    <li>asdasd</li>
-                                    <li>asdasd</li>
-                                    <li>asdasd</li>
+
                                 </ul>
                             </div>
                             <div class="portfolioLinks">
